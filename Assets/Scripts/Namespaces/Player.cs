@@ -6,11 +6,29 @@ namespace P
                     //silloin Using P.Pelaaja
     //{
         public class Player
+        {     
+        public Player()  
+        {   
+            Debug.Log("Player-luokasta luotiin olio ja sen konstruktoria kutsuttiin");
+        }
+        public Player(int x, int xxx=4)
         {
-            public void PrintHello()
-            {
-                Debug.Log("Hello!");
-            }
+            Debug.Log("Player-luokasta luotiin olio ja sen konstruktoria kutsuttiin");
+        }
+        public Player(int x, double d)
+        {
+            Debug.Log("Player-luokasta luotiin olio ja sen konstruktoria kutsuttiin");
+        }
+
+        public void PrintHello()
+        {
+            Debug.Log("Hello!");
+        }
+
+        public void PrintHello(int x=5)
+        {
+
+        }
         }
     //}
 }

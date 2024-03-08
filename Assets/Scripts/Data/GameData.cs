@@ -9,6 +9,6 @@ public class GameData
     
     public GameData()
     {
-        playerPosition = new Vector2(-3, -3);
+        playerPosition = new Vector2(-3, -3); //pelaajan alkusijainti
     }
 }

@@ -14,6 +14,9 @@ public class Game : MonoBehaviour
         player.PrintHello();
         enemy.PrintHello();
         Enemy.PrintMoro(); //koska PrintMoro static 
-        
+        player.PrintHello();
+
+        //string s = "HELLO";
+        //print(s.Length);
     }
 }

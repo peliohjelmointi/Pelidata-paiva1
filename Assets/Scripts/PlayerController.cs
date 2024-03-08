@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Jobs;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, ISaveLoad
 {
     public float speed = 5f;
     public float jumpSpeed = 8f;
@@ -43,5 +44,15 @@ public class PlayerController : MonoBehaviour
         {
             player.velocity = new Vector2(player.velocity.x, jumpSpeed);
         }
+    }
+
+    public void LoadData(GameData data)
+    {
+        transform.position = data.playerPosition;   
+    }
+
+    public void SaveData(GameData data)
+    {
+        data.playerPosition = transform.position;  
     }
 }
